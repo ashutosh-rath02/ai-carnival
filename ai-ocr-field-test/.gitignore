@@ -1,0 +1,20 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+outputs/
+results/run_log.csv
+
+# venv
+venv/
+.venv/
+
+# inputs_real/ holds public-dataset sample documents (SROIE/FUNSD) used as test
+# inputs; sources + licenses are in inputs_real/PROVENANCE.md. (Included on
+# request — attribute the datasets if you redistribute.)
+
+# Zips are large/redundant (regenerate from the folders).
+*.zip
+
+# Social post drafts are personal/unpublished — kept local, never committed.
+post/

@@ -1,0 +1,23 @@
+# Core
+pandas
+python-dotenv
+tqdm
+requests
+
+# Image / PDF handling
+Pillow
+PyMuPDF          # primary PDF -> image renderer (no system deps; preferred on Windows)
+pdf2image        # optional fallback; requires the Poppler system binary on PATH
+opencv-python
+
+# OCR baseline (can be heavy on Windows -- see README "PaddleOCR install" notes)
+paddleocr
+paddlepaddle
+
+# VLM providers
+google-generativeai   # Gemini (default VLM provider)
+openai                # OpenAI vision (optional)
+
+# Mistral OCR (optional). Pinned to 1.x: the 2.x wheels ship without the
+# top-level `Mistral` export on Windows, breaking `from mistralai import Mistral`.
+mistralai==1.12.4

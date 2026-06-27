@@ -1,0 +1,30 @@
+You are testing OCR/document AI performance.
+
+Extract all visible text and then return structured JSON.
+
+Return this JSON shape:
+
+{
+  "document_type": null,
+  "invoice_number": null,
+  "date": null,
+  "vendor": null,
+  "buyer": null,
+  "line_items": [],
+  "subtotal": null,
+  "tax": null,
+  "total": null,
+  "currency": null,
+  "notes": null,
+  "uncertain_fields": [],
+  "visual_quality_notes": [],
+  "raw_text_summary": ""
+}
+
+Rules:
+- Do not guess missing values.
+- Use null when a value is unclear.
+- Preserve table rows as much as possible.
+- Mention if the document is rotated, blurry, handwritten, low contrast, cropped, or multilingual.
+- If totals do not add up, mention it in notes.
+- Do not invent values.
